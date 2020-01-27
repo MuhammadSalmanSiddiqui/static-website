@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<style>
+body 
+{
+  margin: 0 auto;
+   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  top: -50px;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar img 
+{
+  height: 50px;
+  float: right;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <img src="t.png">
+  <a href="#menu">Menu</a>
+  <a href="#Locations">Locations</a>
+
+</div>
+
+<div class="logo">
+ <div> 
+  <img src="t.png">
+  </div>
+</div>
+<div class="topimg">
+  <div class="timg"> <img src="2.png">
+</div>
+</div>
+<div class="heading">
+  
+    <h1>Good Burger</h1> 
+  
+</div>
+<div class="middata">
+  <div class="img"> <img src="8.png">
+    <p class="head">The Doppler</p>
+    <p>burger2 home divider
+    Double crispy chicken topped with cheese, mayo, chilli garlic sauce and lettuce.</p>
+ </div>
+  <div class="img"> <img src="9.png">
+  <p class="head">QUADRA RELOADED</p>
+  <p>4 smashed beef patties with melted cheese topped with crispy onion rings, grilled mushrooms, smoke and BBQ sauces.</p>
+</div>
+  <div class="img"> <img src="5.png">
+  <p class="head">THE BOSS</p>
+  <p>Smashed beef, sauteed mushrooms, lettuce, cripsy onion rings, BBQ, smoke and lab sauce.</p>
+</div>
+</div>
+<div class="midlast">
+  <div class="img"> 
+    <img class="mySlides w3-animate-fading" src="a.png">
+    <img class="mySlides w3-animate-fading" src="m.png">
+  </div>
+   <div class="data"> 
+    <h1>Classic burger taste.<br>
+        Modern restaurant.
+    </h1>
+    <p>Classic burger taste. Modern restaurant. A step into BurgerLab is a step into a new world of taste. It is simply the aroma from our kitchens floating in the air that does the pulling both magically and magnetically. Once you are in our world, nature takes over and you begin to feel the rumble in the stomach, the watering of the mouth, the cravings for the first bite. Don’t kill t-h-a-t demand of nature. Step in. Fill up.
+    </p>
+  </div>
+  
+</div>
+<footer class="footer">
+  <div class="foot1">
+    <h3 class="logo">Atomic Systems</h3>
+    <br/>
+    <p>345 Street Suite 34</p>
+    <p>New York, Germany</p>
+    <br/>
+    <p>545-456-4565</p>
+  </div>
+  <div class="foot2">
+    <h4>Awesome Links</h4>
+    <ul class="fa-ul social-footer">
+      <li><span class="fa-li" ><i class="fas fa-check-square"></i></span>List icons can</li>
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+      <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+      <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+    </ul>
+  </div>
+  <div class="foot3">
+    <h4>Blurbs</h4>
+  </div>
+  <div class="foot4">
+    <h4>Social Media</h4>
+  </div>
+  <div class="copyright">Salmansidd.com &copy; 2020</div>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+</body>
+</html>
