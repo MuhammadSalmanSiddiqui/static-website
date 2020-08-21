@@ -133,6 +133,7 @@ text-align: center;
     }
     .midlast p
     {
+	    text-align: center;
     	max-width: 370px;
     }  
     .middata p
@@ -223,7 +224,7 @@ text-align: center;
     }
     .midlast p,h1
     {
-    
+    text-align: center;
         max-width: 400px;
     }
 }
