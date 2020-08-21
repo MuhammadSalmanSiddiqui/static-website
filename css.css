@@ -41,7 +41,6 @@
  color: #532f17;
  font-size: 14px;
  max-width: 250px;
- padding-left: 90px;
  letter-spacing: .1em;
  text-align: center;
 
@@ -81,7 +80,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-	padding-left: 70px;
+	text-align: center;
 }
 .midlast p
 {
@@ -141,7 +140,7 @@
     }  
     .middata p
     {
-    	padding-left: 20px;
+    	text-align: center;
     }
     .topimg img
     {
@@ -174,11 +173,11 @@
 
     .midlast img
     {
-        margin-left: 110px;
+        text-align: center;
     }
     .data p,h1
     {
-        margin-left: 55px;
+    text-align: center;
         max-width: 500px;
     }
 	.middata img
@@ -188,7 +187,7 @@
     }
     .middata p
     {
-    	padding-left: 250px;
+    	text-align: center;
     }
     .topimg img
     {
@@ -211,7 +210,7 @@
     }
     .middata p
     {
-    	padding-left: 220px;
+    	text-align: center;
     }
     .topimg img
     {
