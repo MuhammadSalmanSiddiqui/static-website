@@ -192,7 +192,7 @@ text-align: center;
 	   width:510px;
     }
 }
-@media screen and (max-width: 690px)
+@media screen and (max-width: 550px)
 {
 	
 	.middata 
@@ -212,7 +212,8 @@ text-align: center;
     }
     .topimg img
     {
-	    width:450px;
+	    width:350px;
+	    height:300px;
     }
     .footer > div
   	{
