@@ -61,10 +61,7 @@
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 }
-.midlast .img 
-{
-	padding: 20px;
-}
+
 .midlast img
 {
 	height: 500px;
@@ -89,8 +86,8 @@
  color: #532f17;
  font-size: 20px;
  max-width: 500px;
- padding-left: 70px;
  letter-spacing: .1em;
+text-align: center;
 }
 .footer
 {
@@ -226,7 +223,7 @@
     }
     .midlast p,h1
     {
-        margin-left: 55px;
+    
         max-width: 400px;
     }
 }
